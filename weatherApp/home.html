@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="header">
+        <form class="location">
+          <a href="" class="location-dot"><i class="fa fa-location-dot"></i></a>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Enter a city"
+          />
+          <a href="" class="searchBtn"
+            ><i class="fa fa-magnifying-glass"></i
+          ></a>
+        </form>
+
+        <div class="reload">
+          <a href="" class="reloadBtn"
+            ><i class="fa-solid fa-rotate-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="mid">
+        <div class="conditions">
+          <div class="icon">
+            <div class="img-container">
+              <img src="cloud.png" alt="cloud" />
+            </div>
+            <div class="temperature-container">
+              <p class="temperature">23ºC</p>
+            </div>
+            <div class="description-container">
+              <p class="description">Light rain</p>
+            </div>
+          </div>
+        </div>
+        <div class="other-conditions">
+          <div>
+            <i class="fa-solid fa-wind"></i>
+            <p class="wind-data">20km/h</p>
+            <p class="wind">Wind</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-sun"></i>
+            <p class="uv-data">2.3</p>
+            <p class="uv">UV</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-droplet"></i>
+            <p class="precip-data">33</p>
+            <p class="precip">Precipitation</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <div class="more-info">
+          <button id="more-info-btn">More info</button>
+          <!-- <i class="fa fa-arrow-down"></i> -->
+        </div>
+
+        <div class="hidden-info-main">
+          <div class="hidden-info">
+            <div>
+              <i class="fa-solid fa-compass"></i>
+              <span>Wind direction</span>
+              <span class="wind-direction-data">data</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-temperature-half"></i>
+              <span>Atmospheric pressure</span>
+              <span class="atm-pressure-data">data</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-cloud"></i>
+              <span>Humidity</span>
+              <span class="humidity-data">data</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-eye-slash"></i>
+              <span>Visibility</span>
+              <span class="visibility-data">data</span>
+            </div>
+          </div>
+          <div class="close-btn-div"><i class="fa fa-circle-xmark"></i></div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
+<!-- src="//cdn.weatherapi.com/weather/64x64/day/296.png"
+                alt="icon" -->
