@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+section {
+  height: 100vh;
+  text-align: center;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.inputArea {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  min-width: 700px;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: start;
+}
+
+form > div {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="text"] {
+  border-radius: 6px;
+  border: 1px solid hsla(240, 1%, 15%, 0.779);
+  height: 25px;
+  margin: 10px;
+  padding: 3px;
+  width: 30%;
+}
+
+#getBmi {
+  background-color: rgba(67, 54, 212, 0.906);
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.range > .pointerParent {
+  margin: 20px;
+  border-radius: 1.8rem;
+  height: 2.3rem;
+  width: 70%;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    rgb(242, 255, 0),
+    rgb(6, 207, 6),
+    yellow,
+    orange,
+    red
+  );
+}
+
+.pointerParent {
+  position: relative;
+  border: 3px dotted black ;
+}
+
+.pointer {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  border: 1px solid black;
+  width: 2%;
+  /* left: 90%; */
+  background-color: white;
+  border-radius: 16px;
+  transition: transform .3s ease 0s;
+  
+}
+
+.pointer :hover{
+  transform: translateX(120px);
+}
