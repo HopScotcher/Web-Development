@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 2px dotted purple;
+  height: 100vh;
+  font-size: 1rem;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+section {
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section > * {
+  flex-grow: 0.2;
+  margin: 0.5rem;
+}
+
+.input-field {
+  border: 1px solid red;
+}
+
+.input-field form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"] {
+  width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  outline: none;
+}
+form input[type="submit"] {
+  width: 30%;
+  align-self: flex-end;
+  margin: 1rem 0;
+  background-color: blue;
+  border: none;
+  padding: 0.6em 0.2em;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin: 0 0.2rem;
+}
+
+.tasks {
+  border: 1px solid blue;
+  /* margin-left: 50px; */
+}
+
+.tasks ul {
+  margin-left: 10px;
+  list-style: none;
+}
+
+ul li {
+  background-color: cyan;
+  border: 1px solid blue;
+  position: relative;
+}
+
+li > i {
+  /* align-self: flex-end; */
+  /* background-color: red; */
+  position: absolute;
+  right: 0;
+  width: 10%;
+}
+
+.clear-all {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-all button {
+  width: 30%;
+  align-self: flex-end;
+  margin: 1rem 0.5rem;
+  background-color: white;
+  border: 1px solid blue;
+  padding: 0.6em 0.2em;
+  color: blue;
+  border-radius: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clear-all button:active,
+.clear-all button:hover {
+  background-color: blue;
+  color: white;
+  border: none;
+}
